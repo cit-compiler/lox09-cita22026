@@ -7,7 +7,7 @@ protein    ::= "sausage" ;
 protein    ::= cooked "eggs" ;
 
 crispiness ::= "really" ;
-crispiness ::= "really" crispiness ;
+crispiness ::= "really" crispiness | "" ;
 
 cooked     ::= "scrambled" ;
 cooked     ::= "poached" ;
