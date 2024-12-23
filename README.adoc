@@ -87,7 +87,7 @@ poached eggs with English muffine on the side
 <1> テキストの記法
 <2> 別の記法
 
-=== 演習：BNFを使ってbrakfast言語の文法を表す
+=== 演習1：BNFを使ってbrakfast言語の文法を表す
 
 . このAssignmentの中にある `codes` ディレクトリにある `breakfast01.bnf` を編集して、テキストに記載されているbrakfast言語の文法を書きなさい。
 ** 日本語のテキストには邦訳も併記されているが、書くのは「 -- 上記の対訳です -- 」の上まででよい。
@@ -126,7 +126,7 @@ BNFの拡張記法。
 正規表現:: 正規表現も使える（らしい）
 
 
-=== 演習：EBNFを使ってbrakfast言語の文法を表す
+=== 演習2：EBNFを使ってbrakfast言語の文法を表す
 
 . このAssignmentの中にある `codes` ディレクトリにある `breakfast02.bnf` を編集して、テキストに記載されている補助構文を適用した後のbrakfast言語の文法を書きなさい。
 . 作成できたら、このリポジトリをコミットしなさい。
@@ -151,7 +151,7 @@ Railroad Diagram Generatorer(1):: http://bottlecaps.de/rr/ui
 Railroad-diagram Generator(2):: https://tabatkins.github.io/railroad-diagrams/
 
 
-=== 演習：Railroad Diagram Generatorerを使ってみる
+=== 演習3：Railroad Diagram Generatorerを使ってみる
 
 . `codes` ディレクトリに、XML（やHTML）のコメントの構文のBNF <<comment.bnf>> を作成する（下記）。
 . Railroad Diagram Generatorer(1)のウェブページを開く。
@@ -188,7 +188,7 @@ image::comment_grammer.png[{full-width}]
 image::comment_diagram.png[{full-width}]
 --
 
-=== 演習：breakfast言語の文法をRailroad Diagramで表す
+=== 演習4：breakfast言語の文法をRailroad Diagramで表す
 
 . Railroad Diagram Generatorer(1)に、前の演習で作成した `breakfast01.bnf` をLoadする。
 . 「View Diagram」タブを開くと、読み込んだBNFのRailroad Diagramが作成される。
@@ -240,7 +240,7 @@ Loxの文法のうち、まずは、次のような式を書くための文法�
 
 NOTE: 式の定義に式が含まれている（再帰的な定義になっている）ことに注意。
 
-=== 演習：Loxの式の文法をBNFで表す
+=== 演習5：Loxの式の文法をBNFで表す
 
 . このAssignmentの中にある `codes` ディレクトリに `expression01.bnf` を作成しなさい。
 . 作成したファイルに、テキストの 5.1.3 に記載されている式の文法を書きなさい。
@@ -295,7 +295,7 @@ Loxの式の要素ごとにそれらを木の要素にするためのクラス�
   }
 ----
 
-=== 演習：コードを生成するプログラムを作成する
+=== 演習6：コードを生成するプログラムを作成する
 
 テキストの5.2.2を読みながら、「lox01」リポジトリで `GenerateAst.java` を作成しなさい。
 
@@ -397,7 +397,7 @@ abstract class Expr {
 }
 ----
 
-=== 演習：Visitorを式の処理に追加する -- 5.3.3
+=== 演習7：Visitorを式の処理に追加する -- 5.3.3
 
 テキストの5.3.3を読みながら、「lox01」リポジトリに、Visitorパターンを適用するコードを追加しなさい。
 
@@ -416,7 +416,7 @@ abstract class Expr {
 ** コミットメッセージは「modify GenerateAst.java for visitor」などでよいでしょう。
 ** 忘れそうなら、「lox01」プッシュしておいてもよい。
 
-=== 演習：構文木の可視化
+=== 演習8：構文木の可視化
 
 次のサイトは、構文木の可視化を試すことができる。
 JavaScriptの式で、数値と四則演算とカッコを使ったものが試せる。
@@ -447,7 +447,7 @@ image::ast.png[]
 
 
 
-=== 演習：プリティプリンタ -- 5.4
+=== 演習9：プリティプリンタ -- 5.4
 
 生成した構文木を視覚的に把握するためのプログラムを作る。
 テキストの5.4を読みながら、「lox01」リポジトリに、プリティプリンタ用のコードを追加しなさい。
